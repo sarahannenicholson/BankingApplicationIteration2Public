@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BankingApplicationIteration2</name>
+    </assembly>
+    <members>
+        <member name="F:BankingApplicationIteration2.AddCustomerForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BankingApplicationIteration2.AddCustomerForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BankingApplicationIteration2.AddCustomerForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BankingApplicationIteration2.AddNewAccount.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BankingApplicationIteration2.AddNewAccount.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BankingApplicationIteration2.AddNewAccount.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:BankingApplicationIteration2.Controller">
+            <summary>
+            controller class
+            all the code that interacts with the forms
+            </summary>
+        </member>
+        <member name="F:BankingApplicationIteration2.Controller.AllCustomers">
+            <summary>
+            creation of the lists needed to store and parse the data to the binary files
+            </summary>
+        </member>
+        <member name="M:BankingApplicationIteration2.Controller.CreateCustomer(System.Int32,System.String,System.String,System.Boolean,System.Int32)">
+            <summary>
+            code used to create a new customer for the application as long as the parameters are met
+            </summary>
+            <param name="accID">specific id assigned to the customer</param>
+            <param name="name">customers first and last name</param>
+            <param name="email">contact details</param>
+            <param name="isStaff"> is the customer a member of staff</param>
+            <param name="discountPercentage">if staff and what is their discount percentage(standard is 50 off fees)</param>
+        </member>
+        <member name="M:BankingApplicationIteration2.Controller.CreateAccount(System.Int32,System.Int32,System.Double,System.String,System.Double)">
+            <summary>
+            code used to create a new account for the application as long as the parameters are met
+            </summary>
+            <param name="accountID"></param>
+            <param name="accountHolderID"></param>
+            <param name="accountBalance"></param>
+            <param name="accountType"></param>
+            <param name="overdraftAmount"></param>
+        </member>
+        <member name="M:BankingApplicationIteration2.Controller.FindCustomerByID(System.Int32)">
+            <summary>
+            used to find the customers details so long as their ID num is parsed
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApplicationIteration2.Controller.FindAccountByID(System.Int32)">
+            <summary>
+            used to find the account details so long as the ID number is parsed
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApplicationIteration2.Controller.UpdateCustomer(System.Int32,System.String,System.String,System.Boolean,System.Int32)">
+            <summary>
+            updates the customers details where needed
+            </summary>
+            <param name="accID"></param>
+            <param name="name"></param>
+            <param name="email"></param>
+            <param name="isStaff"></param>
+            <param name="discount"></param>
+        </member>
+        <member name="M:BankingApplicationIteration2.Controller.UpdateAccount(System.Int32,System.Int32,System.Double,System.String,System.Double)">
+            <summary>
+            allows for the update of account information
+            </summary>
+            <param name="accountID"></param>
+            <param name="accountHolderID"></param>
+            <param name="accountBalance"></param>
+            <param name="accountType"></param>
+            <param name="overdraftAmount"></param>
+        </member>
+        <member name="M:BankingApplicationIteration2.Controller.DeleteCustomer(System.String)">
+            <summary>
+            removes a customer where needed by deleting from the binary file
+            </summary>
+            <param name="deleteLine"></param>
+        </member>
+        <member name="M:BankingApplicationIteration2.Controller.DeleteAccount(System.String)">
+            <summary>
+            removes account details for the binary file
+            </summary>
+            <param name="deleteLine"></param>
+        </member>
+        <member name="M:BankingApplicationIteration2.Controller.ReadTextFileCustomers">
+            <summary>
+            reads the data currently stored on the customer file
+            </summary>
+        </member>
+        <member name="M:BankingApplicationIteration2.Controller.ReadTextFileAccounts">
+            <summary>
+            reads the accounts file and parses to list
+            </summary>
+        </member>
+        <member name="F:BankingApplicationIteration2.EditCustomerForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BankingApplicationIteration2.EditCustomerForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BankingApplicationIteration2.EditCustomerForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BankingApplicationIteration2.MainMenuForm.components">
+            <summary>
+             Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BankingApplicationIteration2.MainMenuForm.Dispose(System.Boolean)">
+            <summary>
+             Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BankingApplicationIteration2.MainMenuForm.InitializeComponent">
+            <summary>
+             Required method for Designer support - do not modify
+             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BankingApplicationIteration2.ManageAccountsForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BankingApplicationIteration2.ManageAccountsForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BankingApplicationIteration2.ManageAccountsForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BankingApplicationIteration2.ManageCustomerForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BankingApplicationIteration2.ManageCustomerForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BankingApplicationIteration2.ManageCustomerForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BankingApplicationIteration2.ParentForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BankingApplicationIteration2.ParentForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BankingApplicationIteration2.ParentForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:BankingApplicationIteration2.Program.Main">
+            <summary>
+             The main entry point for the application.
+            </summary>
+        </member>
+    </members>
+</doc>

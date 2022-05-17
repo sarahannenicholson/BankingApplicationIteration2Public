@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\OpenPoly\BIT706 Programming 3\BIT706_A2_4341994_SANICHOLSON\Banking Application Iteration 2\BankingApplicationIteration2\BankingApplicationIteration2.xml</DocumentationFile>
+    <OutputPath>xml files\</OutputPath>
+  </PropertyGroup>
+
+</Project>
